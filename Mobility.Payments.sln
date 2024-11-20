@@ -22,6 +22,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobility.Payments.Crosscuti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobility.Payments.Api.Contracts", "Mobility.Payments.Api.Contracts\Mobility.Payments.Api.Contracts.csproj", "{A8602DB9-A4EC-49B2-9F3F-D336225390BE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobility.Payments.Api.Tests", "Mobility.Payments.Api.Tests\Mobility.Payments.Api.Tests.csproj", "{0484283E-38C3-44D1-9AD6-92813190EED3}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobility.Payments.Application.Tests", "Mobility.Payments.Application.Tests\Mobility.Payments.Application.Tests.csproj", "{A2AC829A-AD08-4EE0-BC44-F0710CED4F34}"
 EndProject
 Global
