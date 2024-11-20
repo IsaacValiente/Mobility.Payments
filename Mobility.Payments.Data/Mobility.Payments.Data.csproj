@@ -3,6 +3,7 @@
   <PropertyGroup>
 	<AssemblyName>Mobility.Payments.Data</AssemblyName>
 	<RootNamespace>Mobility.Payments.Data</RootNamespace>
+	<TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
