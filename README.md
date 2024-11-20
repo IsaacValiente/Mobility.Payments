@@ -1,8 +1,8 @@
 # Mobility.Payments.Api
-This project manages listing properties for HomesUSA.
+This project manages payment services for Mobility.
 
 ## Getting Started
-This project will be an update of the services related to the management of HomesUSA listing properties, oriented to the microservice using .NET core. 
+This project is designed for a microservice architecture using .NET Core. It aims to provide efficient and secure handling of user authentication, transactions, and other payment-related processes.
  
 ### Source and Documentation
 `
