@@ -20,6 +20,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobility.Payments.Domain", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobility.Payments.Crosscuting", "Mobility.Payments.Crosscuting\Mobility.Payments.Crosscuting.csproj", "{E48677BF-806E-466C-9C5F-32BA9C39C426}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobility.Payments.Application.Tests", "Mobility.Payments.Application.Tests\Mobility.Payments.Application.Tests.csproj", "{A2AC829A-AD08-4EE0-BC44-F0710CED4F34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
