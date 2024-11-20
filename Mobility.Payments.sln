@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobility.Payments.Api", "Mobility.Payments.Api\Mobility.Payments.Api.csproj", "{C5374F93-577B-4153-A579-DDC2EB9A02D7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobility.Payments.Application", "Mobility.Payments.Application\Mobility.Payments.Application.csproj", "{A0D8799C-317B-4251-83F8-4FD50ADA7772}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FD1DCE40-2661-4E0B-95FA-01937E4C6E48}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
