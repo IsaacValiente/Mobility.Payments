@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<AssemblyName>Mobility.Payments.Domain</AssemblyName>
+	<RootNamespace>Mobility.Payments.Domain</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mobility.Payments.Crosscuting\Mobility.Payments.Crosscuting.csproj" />
+  </ItemGroup>
+
+</Project>

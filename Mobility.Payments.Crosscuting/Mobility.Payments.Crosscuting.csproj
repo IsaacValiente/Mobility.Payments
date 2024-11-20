@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AssemblyName>Mobility.Payments.Crosscuting</AssemblyName>
+		<RootNamespace>Mobility.Payments.Crosscuting</RootNamespace>
+	</PropertyGroup>
+
+</Project>
