@@ -1,0 +1,18 @@
+<Project >
+    <PropertyGroup Condition="'$(MSBuildProjectExtension)' != '.dcproj'">
+        <TargetFramework>net8.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <RunCodeAnalysis>false</RunCodeAnalysis>
+        <NeutralLanguage>en</NeutralLanguage>
+        <Nullable>disable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <Authors>Isaac Gonzalez</Authors>
+        <Company>Mobility Inc.</Company>
+        <Product>Mobility Inc. Payments</Product>
+        <Version>0.0.1</Version>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/IsaacValiente/Mobility.Payments</RepositoryUrl>
+        <PackageTags>Mobility Inc; Payments;</PackageTags>
+        <IsPackable>true</IsPackable>
+    </PropertyGroup>
+</Project>

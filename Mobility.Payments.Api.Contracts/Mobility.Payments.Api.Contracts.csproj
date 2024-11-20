@@ -1,0 +1,5 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Mobility.Payments.Crosscuting\Mobility.Payments.Crosscuting.csproj" />
+  </ItemGroup>
+</Project>

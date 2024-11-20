@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<AssemblyName>Mobility.Payments.Application</AssemblyName>
+	<RootNamespace>Mobility.Payments.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mobility.Payments.Crosscuting\Mobility.Payments.Crosscuting.csproj" />
+    <ProjectReference Include="..\Mobility.Payments.Domain\Mobility.Payments.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
