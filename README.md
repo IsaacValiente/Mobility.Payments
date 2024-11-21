@@ -14,7 +14,48 @@ https://github.com/IsaacValiente/Mobility.Payments/tree/main
 - [.NET 8 SDK](https://dotnet.microsoft.com/download).
 - [Visual Studio](https://visualstudio.microsoft.com/).
 - [SQL Server Management Studio](https://aka.ms/ssmsfullsetup).
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) (for running the application in Docker containers).
 
+#### Running the project
+The application can be run in Docker containers or normally.
+
+#### Running the project with Docker
+To run the project using Docker, follow these steps:
+
+1. **Install Docker**: Make sure Docker Desktop is installed and running on your machine.
+
+2. **Environment Variables**:
+Docker Compose uses the following environment variables. You can set them in an .env file or directly in your terminal before running Docker Compose:
+```
+KESTREL_CERT_PASSWORD=<your-certificate-password>
+JWT_SECRET=<your-jwt-secret>
+CONNECTION_STRING=Server=sql,1433;Database=MobilityPayments;User ID=sa;Password=<your-sql-server-password>;Trusted_Connection=False;Encrypt=True;TrustServerCertificate=true;
+API_KEY=<your-api-key>
+MSSQL_SA_PASSWORD=<your-sql-server-password>
+```
+Notes:
+- `"KESTREL_CERT_PASSWORD"` This value represents the password certificate for Kestrel. Type Guid
+- `"CONNECTION_STRING"` The value password <your-sql-server-password> must be replaced with the value of `{MSSQL_SA_PASSWORD}`.
+- `"API_KEY"` This value represents the API Key, and it must be sent in the `X-API-Key` header when making requests to the API. Type Guid
+- `"JWT_SECRET"` This can be any string, but it must be long enough to ensure security (e.g., `this-will-be-a-super-secret-key-for-jwt-configuration`)
+- `"MSSQL_SA_PASSWORD"` password for the sa db user
+
+3. **Build and run containers using Docker Compose**:
+   In the project root folder `Mobility.Payments`, where your `docker-compose.yml` file is located, open a terminal and run the following command:
+   
+   ```
+   docker-compose up -d
+   ```
+   
+By default, the application will be available at: `http://localhost:8081`
+You can access swagger interface on `https://localhost:8081/swagger/index.html`
+
+You can stop the containers at any time by running:
+   ```
+   docker-compose down
+   ```
+
+#### Running the project
 ### Installing
 
 Clone repository and open `.sln` file in Visual Studio 2022. Build Solution.
@@ -75,10 +116,10 @@ If you can connect with your new credentials, then this step is finished.
 
 Notes:
 - `"ConnectionStrings-MobilityConnection"` the values ID and password must be replaced with the values obtained in the creation of the db user.
-- `"ApiKey-value"` This value represents the API Key, and it must be sent in the `X-API-Key` header when making requests to the API.
+- `"ApiKey-value"` This value represents the API Key, and it must be sent in the `X-API-Key` header when making requests to the API. Type Guid
 - `"JwtConfiguration-Secret"` This can be any string, but it must be long enough to ensure security (e.g., `this-will-be-a-super-secret-key-for-jwt-configuration`).
 
-## Running the project
+## Running the project without docker containers
 
 ### Through Visual Studio
 
@@ -90,6 +131,9 @@ Select `Mobility.Payments.Api` from the dropdown list in the Text Editor Toolbar
 
 2. Type `dotnet run .\Mobility.Payments.Api.csproj --launch-profile Mobility.Payments.Api`.
 
+
+By default, the application will be available at: `https://localhost:7001`
+You can access swagger interface on `https://localhost:7001/swagger/index.html`
 ## Running the tests
 
 There are two ways two run tests: Through Visual Studio or by Command Window.
